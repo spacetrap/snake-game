@@ -1,0 +1,113 @@
+:root {
+    --bodyColor: #161645;
+    --boardColor: #777777;
+    --wormColor : #b76a6a;
+    --intsructionsColor: #3a3a04;
+    --scoreColor: #abb78a;
+    --highScoreColor: #d8ddca;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'VT323', monospace;
+}
+  
+body {
+    background-color: var(--bodyColor);
+}
+.snake {
+    background-color: var(--wormColor);
+}
+  
+#game-board {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+}
+  
+.game-border-1 {
+    border: #595f43 solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #595f43;
+}
+
+.game-border-2 {
+    border: #abb78a solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #abb78a;
+}
+
+.game-border-3 {
+    border: #8b966c solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #8b966c;
+}
+
+#instruction-text {
+    position: absolute;
+    top: 66%;
+    color: var(--intsructionsColor);
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+}
+
+#over-text {
+    position: absolute;
+    top: 24%;
+    color: var(--intsructionsColor);
+    width: 300px;
+    font-size: 180px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+    display: none;
+}
+  
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score {
+    color: var(--scoreColor);
+}
+
+#score,
+#highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+#highScore {
+    color: var(--highScoreColor);
+    display: none;
+}
+
+.game-border-3,
+#logo {
+    background-color: #c4cfa3;
+}
+  
+.snake {
+    border: #5e2f2f 1px dotted;
+}
+
+.food {
+    background-color: #0281b3;
+    /* border: #7c66663f 5px solid; */
+}
+
+#logo {
+    position: absolute;
+}
